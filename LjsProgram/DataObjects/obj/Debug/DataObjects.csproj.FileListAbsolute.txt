@@ -1,0 +1,11 @@
+C:\Users\stewi\source\repos\LjsProgram\DataObjects\bin\Debug\DataObjects.dll
+C:\Users\stewi\source\repos\LjsProgram\DataObjects\bin\Debug\DataObjects.pdb
+C:\Users\stewi\source\repos\LjsProgram\DataObjects\obj\Debug\DataObjects.csprojAssemblyReference.cache
+C:\Users\stewi\source\repos\LjsProgram\DataObjects\obj\Debug\DataObjects.dll
+C:\Users\stewi\source\repos\LjsProgram\DataObjects\obj\Debug\DataObjects.pdb
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\DataObjects\bin\Debug\DataObjects.dll
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\DataObjects\bin\Debug\DataObjects.pdb
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\DataObjects\obj\Debug\DataObjects.dll
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\DataObjects\obj\Debug\DataObjects.pdb
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\DataObjects\obj\Debug\DataObjects.csprojAssemblyReference.cache
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\DataObjects\obj\Debug\DataObjects.csproj.CoreCompileInputs.cache

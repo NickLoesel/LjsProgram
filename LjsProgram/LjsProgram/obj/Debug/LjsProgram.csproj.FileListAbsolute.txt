@@ -1,0 +1,46 @@
+C:\Users\stewi\source\repos\LjsProgram\LjsProgram\bin\Debug\LjsProgram.exe.config
+C:\Users\stewi\source\repos\LjsProgram\LjsProgram\bin\Debug\LjsProgram.exe
+C:\Users\stewi\source\repos\LjsProgram\LjsProgram\bin\Debug\LjsProgram.pdb
+C:\Users\stewi\source\repos\LjsProgram\LjsProgram\obj\Debug\LjsProgram.csprojAssemblyReference.cache
+C:\Users\stewi\source\repos\LjsProgram\LjsProgram\obj\Debug\MainWindow.g.cs
+C:\Users\stewi\source\repos\LjsProgram\LjsProgram\obj\Debug\App.g.cs
+C:\Users\stewi\source\repos\LjsProgram\LjsProgram\obj\Debug\LjsProgram_MarkupCompile.cache
+C:\Users\stewi\source\repos\LjsProgram\LjsProgram\obj\Debug\LjsProgram_MarkupCompile.lref
+C:\Users\stewi\source\repos\LjsProgram\LjsProgram\obj\Debug\MainWindow.baml
+C:\Users\stewi\source\repos\LjsProgram\LjsProgram\obj\Debug\LjsProgram.g.resources
+C:\Users\stewi\source\repos\LjsProgram\LjsProgram\obj\Debug\LjsProgram.Properties.Resources.resources
+C:\Users\stewi\source\repos\LjsProgram\LjsProgram\obj\Debug\LjsProgram.csproj.GenerateResource.cache
+C:\Users\stewi\source\repos\LjsProgram\LjsProgram\obj\Debug\LjsProgram.exe
+C:\Users\stewi\source\repos\LjsProgram\LjsProgram\obj\Debug\LjsProgram.pdb
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\LjsProgram.csprojAssemblyReference.cache
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\MainWindow.g.cs
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\App.g.cs
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\LjsProgram_MarkupCompile.cache
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\LjsProgram_MarkupCompile.lref
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\LjsProgram.exe
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\LjsProgram.pdb
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\frmUpdatePassword.g.cs
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\bin\Debug\LjsProgram.exe.config
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\bin\Debug\LjsProgram.exe
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\bin\Debug\LjsProgram.pdb
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\bin\Debug\DataObjects.dll
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\bin\Debug\LogicLayer.dll
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\bin\Debug\DataAccessLayer.dll
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\bin\Debug\DataObjects.pdb
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\bin\Debug\LogicLayer.pdb
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\bin\Debug\DataAccessLayer.pdb
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\frmUpdatePassword.baml
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\MainWindow.baml
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\LjsProgram.g.resources
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\LjsProgram.Properties.Resources.resources
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\LjsProgram.csproj.GenerateResource.cache
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\LjsProgram.csproj.CopyComplete
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\frmAddProduct.g.cs
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\frmEmployeeAddEdit.g.cs
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\frmAddProduct.baml
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\frmEmployeeAddEdit.baml
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\frmAddOrder.g.cs
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\frmAddOrder.baml
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\frmAddEditCustomer.g.cs
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\frmAddEditCustomer.baml
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\LjsProgram\obj\Debug\LjsProgram.csproj.CoreCompileInputs.cache
