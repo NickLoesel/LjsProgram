@@ -115,3 +115,6 @@ C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\PresentationMVC\bin\Logi
 C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\PresentationMVC\bin\DataAccessLayer.dll
 C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\PresentationMVC\bin\LogicLayer.pdb
 C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\PresentationMVC\bin\DataAccessLayer.pdb
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\PresentationMVC\bin\LjsProgram.exe
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\PresentationMVC\bin\LjsProgram.pdb
+C:\Users\stewi\OneDrive\Desktop\LJ's Program\LjsProgram\PresentationMVC\bin\LjsProgram.exe.config

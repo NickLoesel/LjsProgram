@@ -17,5 +17,7 @@ namespace LogicLayer
                                  List<string> oldUnassignedRoles,
                                  List<string> newUnassignedRoles);
         bool AddNewEmployee(EmployeeViewModel newEmployee);
+
+        EmployeeViewModel SelectEmployeeByEmployeeID(int employeeID);
     }
 }

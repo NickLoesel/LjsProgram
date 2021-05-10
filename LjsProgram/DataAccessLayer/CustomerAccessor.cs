@@ -110,6 +110,97 @@ namespace DataAccessLayer
             return result;
         }
 
+        public Customer SelectCustomerByID(int customerID)
+        {
+            Customer customer = new Customer();
+
+            var conn = DBConnection.GetDBConnection();
+
+            var cmd = new SqlCommand("sp_select_customer_by_customer_ID", conn);
+
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@CustomerID", customerID);
+
+            try
+            {
+                conn.Open();
+
+                var reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+
+                        customer.CustomerID = reader.GetInt32(0);
+                        customer.BusinessName = reader.GetString(1);
+                        customer.CustomerFirstName = reader.GetString(2);
+                        customer.CustomerLastName = reader.GetString(3);
+                        customer.CustomerEmail = reader.GetString(4);
+                        customer.CustomerPhoneNumber = reader.GetString(5);
+                        customer.Active = reader.GetBoolean(6);
+                    }
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return customer;
+        }
+
+        public Customer SelectCustomerByName(string customerName)
+        {
+            Customer customer = new Customer();
+
+            var conn = DBConnection.GetDBConnection();
+
+            var cmd = new SqlCommand("sp_select_customer_by_customer_Name", conn);
+
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.Add("@CustomerFirstName", SqlDbType.NVarChar, 50);
+            cmd.Parameters["@CustomerFirstName"].Value = customerName;
+
+            try
+            {
+                conn.Open();
+
+                var reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+
+                        customer.CustomerID = reader.GetInt32(0);
+                        customer.BusinessName = reader.GetString(1);
+                        customer.CustomerFirstName = reader.GetString(2);
+                        customer.CustomerLastName = reader.GetString(3);
+                        customer.CustomerEmail = reader.GetString(4);
+                        customer.CustomerPhoneNumber = reader.GetString(5);
+                        customer.Active = reader.GetBoolean(6);
+                    }
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return customer;
+        }
+
         public List<Customer> SelectCustomersByActive(bool active = true)
         {
             List<Customer> customers = new List<Customer>();

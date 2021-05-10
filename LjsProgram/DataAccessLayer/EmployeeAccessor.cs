@@ -255,6 +255,50 @@ namespace DataAccessLayer
             return employees;
         }
 
+        public EmployeeViewModel SelectEmployeesByID(int employeeID)
+        {
+            EmployeeViewModel employee = new EmployeeViewModel();
+
+            var conn = DBConnection.GetDBConnection();
+
+            var cmd = new SqlCommand("sp_select_employee_by_id", conn);
+
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@EmployeeID", employeeID);
+
+            try
+            {
+                conn.Open();
+
+                var reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+
+                        employee.EmployeeID = reader.GetInt32(0);
+                        employee.Email = reader.GetString(1);
+                        employee.FirstName = reader.GetString(2);
+                        employee.LastName = reader.GetString(3);
+                        employee.PhoneNumber = reader.GetString(4);
+                        employee.Active = reader.GetBoolean(5);
+                    }
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return employee;
+        }
+
         public List<string> SelectRolesByEmployeeID(int employeeID)
         {
             List<string> roles = new List<string>();

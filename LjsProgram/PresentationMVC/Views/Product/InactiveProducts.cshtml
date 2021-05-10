@@ -1,0 +1,70 @@
+﻿@model IEnumerable<DataObjects.Product>
+
+@{
+    ViewBag.Title = "InactiveProducts";
+}
+
+<h2>InactiveProducts</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Vendor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BuyPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SalePrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Active)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vendor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BuyPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SalePrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Active)
+            </td>
+            <td>
+                @Html.ActionLink("Reactivate", "Reactivate", new { productID = item.ProductID }) 
+            </td>
+        </tr>
+    }
+</table>
+<p>
+    @Html.ActionLink("Active Products", "Products")
+</p>

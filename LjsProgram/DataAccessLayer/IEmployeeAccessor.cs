@@ -18,5 +18,6 @@ namespace DataAccessLayer
         int DeleteEmployeeRole(int employeeID, string role);
         int InsertEmployeeRole(int employeeID, string role);
         int InsertNewEmployee(Employee employee);
+        EmployeeViewModel SelectEmployeesByID(int employeeID);
     }
 }

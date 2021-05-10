@@ -225,6 +225,50 @@ namespace DataAccessLayer
             return products;
         }
 
-        
+        public Product SelectProductById(int ProductID)
+        {
+            Product product = new Product();
+
+            var conn = DBConnection.GetDBConnection();
+
+            var cmd = new SqlCommand("sp_selectProductByProductID", conn);
+
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@ProductID", ProductID);
+
+            try
+            {
+                conn.Open();
+
+                var reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+
+                        product.ProductID = reader.GetInt32(0);
+                        product.ProductName = reader.GetString(1);
+                        product.Vendor = reader.GetString(2);
+                        product.ProductType = reader.GetString(3);
+                        product.BuyPrice = reader.GetDecimal(4);
+                        product.SalePrice = reader.GetDecimal(5);
+                        product.Quantity = reader.GetInt32(6);
+                        product.Active = reader.GetBoolean(7);
+                    }
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return product;
+        }
     }
 }

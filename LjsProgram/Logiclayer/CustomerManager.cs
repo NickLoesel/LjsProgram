@@ -72,6 +72,45 @@ namespace LogicLayer
 
         }
 
+        public Customer SelectCustomerByID(int customerID)
+        {
+            Customer customer = null;
+
+            try
+            {
+                customer = _customerAccessor.SelectCustomerByID(customerID);
+                if (customer == null)
+                {
+                    throw new ApplicationException("Customer not found.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Customer not found.", ex);
+            }
+
+            return customer;
+        }
+        public Customer SelectCustomerByName(String customerName)
+        {
+            Customer customer = null;
+
+            try
+            {
+                customer = _customerAccessor.SelectCustomerByName(customerName);
+                if (customer == null)
+                {
+                    throw new ApplicationException("Customer not found.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Customer not found.", ex);
+            }
+
+            return customer;
+        }
+
         public bool UpdateCustomer(Customer oldCustomer, Customer newCustomer)
         {
             bool result = false;

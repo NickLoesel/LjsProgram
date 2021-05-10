@@ -15,5 +15,7 @@ namespace DataAccessLayer
         int ReactivateCustomer(int customerID);
         int DeactivateCustomer(int customerID);
         int InsertNewCustomer(Customer customer);
+        Customer SelectCustomerByID(int customerID);
+        Customer SelectCustomerByName(String customerName);
     }
 }

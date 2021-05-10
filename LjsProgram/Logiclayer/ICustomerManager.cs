@@ -14,5 +14,7 @@ namespace LogicLayer
 
         bool AddNewCustomer(Customer newCustomer);
         bool UpdateCustomer(Customer oldCustomer, Customer newCustomer);
+        Customer SelectCustomerByID(int customerID);
+        Customer SelectCustomerByName(String customerName);
     }
 }

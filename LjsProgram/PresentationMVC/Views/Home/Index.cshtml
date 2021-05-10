@@ -7,14 +7,14 @@
 </div>
 
 <div class="btn" role="group" aria-label="Employees">
-    <button type="button" class="btn btn-secondary">@Html.ActionLink("Manage Employees", "Employees", "Employee")</button>
+    <button type="button" class="btn btn-secondary">@Html.ActionLink("Employees", "Employees", "Employee")</button>
 </div>
 <div class="btn" role="group" aria-label="Inventory">
-    <button type="button" class="btn btn-secondary" onclick="LoadInventory()">Inventory</button>
+    <button type="button" class="btn btn-secondary">@Html.ActionLink("Inventory", "Products", "Product")</button>
 </div>
 <div class="btn" role="group" aria-label="Customers">
-    <button type="button" class="btn btn-secondary" onclick="LoadCustomers()">Customers</button>
+    <button type="button" class="btn btn-secondary">@Html.ActionLink("Customers", "Customers", "Customer")</button>
 </div>
 <div class="btn" role="group" aria-label="Orders">
-    <button type="button" class="btn btn-secondary" onclick="LoadOrders()">Orders</button>
+    <button type="button" class="btn btn-secondary"> @Html.ActionLink("Orders", "Orders", "Order")</button>
 </div>

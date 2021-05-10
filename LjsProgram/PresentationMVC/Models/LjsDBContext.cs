@@ -14,5 +14,6 @@ namespace PresentationMVC.Models
         {
         }
         public DbSet<Product> Product { get; set; }
+
     }
 }

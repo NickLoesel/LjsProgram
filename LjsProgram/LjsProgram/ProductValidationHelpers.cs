@@ -12,7 +12,7 @@ namespace LjsProgram
         {
             bool result = false;
 
-            if(productName.Length < 100 && productName.Length > 5)
+            if(productName.Length < 100 && productName.Length > 1)
             {
                 result = true;
             }
@@ -23,7 +23,7 @@ namespace LjsProgram
         {
             bool result = false;
 
-            if(vendor.Length < 250 && vendor.Length > 5)
+            if(vendor.Length < 250 && vendor.Length > 0)
             {
                 result = true;
             }
@@ -34,7 +34,7 @@ namespace LjsProgram
         {
             bool result = false;
 
-            if(productType.Length < 50 && productType.Length > 5)
+            if(productType.Length < 50 && productType.Length > 1)
             {
                 result = true;
             }

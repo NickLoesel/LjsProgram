@@ -60,7 +60,7 @@ namespace LogicLayer
                 }
                 foreach (var role in newUnassignedRolesoles)
                 {
-                    if (!oldUnassignedRoles.Contains((role)))
+                    if (oldUnassignedRoles.Contains((role)))
                     {
                         _employeeAccessor.DeleteEmployeeRole(oldEmployee.EmployeeID, role);
                     }
@@ -148,6 +148,26 @@ namespace LogicLayer
             }
 
             return roles;
+        }
+
+        public EmployeeViewModel SelectEmployeeByEmployeeID(int employeeID)
+        {
+            EmployeeViewModel employee = null;
+
+            try
+            {
+                employee = _employeeAccessor.SelectEmployeesByID(employeeID);
+                if (employee == null)
+                {
+                    throw new ApplicationException("Employee not found.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Employee not found.", ex);
+            }
+
+            return employee;
         }
     }
 }

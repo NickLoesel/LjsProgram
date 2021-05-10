@@ -14,5 +14,6 @@ namespace DataAccessLayer
         int UpdateProduct(Product oldProduct, Product newProduct);
         int ReactivateProduct(int productID);
         int DeactivateProduct(int productID);
+        Product SelectProductById(int ProductID);
     }
 }

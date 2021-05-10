@@ -11,10 +11,15 @@ namespace LjsProgram
         public static bool IsValidBusinessName(this string businessName)
         {
             bool result = false;
-
+            //if (string.IsNullOrEmpty(businessName))
+            //{
+            //    result = false;
+            //    return false;
+                
+            //}
             if (businessName.Length <= 50)
             {
-                result = true;
+                return true;
             }
 
             return result;

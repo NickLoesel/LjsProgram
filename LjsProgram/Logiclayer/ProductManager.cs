@@ -88,5 +88,24 @@ namespace LogicLayer
             return result;
         }
 
+        public Product SelectProductById(int productID)
+        {
+            Product product = null;
+
+            try
+            {
+                product = _productAccessor.SelectProductById(productID);
+                if (product == null)
+                {
+                    throw new ApplicationException("Product not found.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Product not found.", ex);
+            }
+
+            return product;
+        }
     }
 }

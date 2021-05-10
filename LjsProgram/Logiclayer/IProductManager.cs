@@ -13,5 +13,6 @@ namespace LogicLayer
         List<Product> GetProductsByActive(bool active = true);
         bool UpdateProduct(Product oldProduct, Product newProduct);
         bool AddNewProduct(Product newProduct);
+        Product SelectProductById(int productID);
     }
 }

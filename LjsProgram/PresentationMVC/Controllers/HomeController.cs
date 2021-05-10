@@ -10,7 +10,14 @@ namespace PresentationMVC.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            if (User.Identity.IsAuthenticated == false)
+            {
+                return Redirect("/Account/Login");
+            }
+            else
+            {
+                return View();
+            }
         }
 
         public ActionResult About()

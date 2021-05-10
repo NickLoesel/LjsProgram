@@ -366,6 +366,21 @@ AS
 	END
 GO
 
+print '' print '*** creating sp_selectProductByProductID ***'
+GO
+CREATE PROCEDURE [dbo].[sp_selectProductByProductID]
+(
+	@ProductID 	[Int]
+)
+AS
+	BEGIN
+		SELECT ProductID, ProductName, Vendor, ProductType, BuyPrice, SalePrice,Quantity, Active
+		FROM product
+		WHERE ProductID = @ProductID
+		ORDER BY ProductName ASC
+	END
+GO
+
 print '' print '*** creating sp_select_customers_by_active ***'
 GO
 CREATE PROCEDURE [dbo].[sp_select_customers_by_active]
@@ -377,6 +392,36 @@ AS
 		SELECT CustomerID, BusinessName, CustomerFirstName, CustomerLastName, CustomerEmail, CustomerPhoneNumber, Active
 		FROM Customer
 		WHERE Active = @Active
+		ORDER BY CustomerLastName ASC
+	END
+GO
+
+print '' print '*** creating sp_select_customer_by_customer_ID ***'
+GO
+CREATE PROCEDURE [dbo].[sp_select_customer_by_customer_ID]
+(
+	@CustomerID 	[Int]
+)
+AS
+	BEGIN
+		SELECT CustomerID, BusinessName, CustomerFirstName, CustomerLastName, CustomerEmail, CustomerPhoneNumber, Active
+		FROM Customer
+		WHERE CustomerID = @CustomerID
+		ORDER BY CustomerLastName ASC
+	END
+GO
+
+print '' print '*** creating sp_select_customer_by_customer_Name ***'
+GO
+CREATE PROCEDURE [dbo].[sp_select_customer_by_customer_Name]
+(
+	@CustomerFirstName 	[nvarchar](50)
+)
+AS
+	BEGIN
+		SELECT CustomerID, BusinessName, CustomerFirstName, CustomerLastName, CustomerEmail, CustomerPhoneNumber, Active
+		FROM Customer
+		WHERE CustomerFirstName = @CustomerFirstName
 		ORDER BY CustomerLastName ASC
 	END
 GO

@@ -1,0 +1,64 @@
+﻿@model IEnumerable<DataObjects.Customer>
+
+@{
+    ViewBag.Title = "InactiveCustomers";
+}
+
+<h2>InactiveCustomers</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.BusinessName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerLastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerPhoneNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Active)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.BusinessName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CustomerFirstName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CustomerLastName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CustomerEmail)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CustomerPhoneNumber)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Active)
+    </td>
+    <td>
+        @Html.ActionLink("Reactivate", "Reactivate", new { customerID = item.CustomerID })
+    </td>
+</tr>
+}
+
+</table>
+<p>
+    @Html.ActionLink("Active Customers","Customers")
+</p>
